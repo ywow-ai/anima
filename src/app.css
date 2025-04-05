@@ -1,2 +1,15 @@
 @import 'tailwindcss';
 @plugin "@iconify/tailwind4";
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #314158;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
