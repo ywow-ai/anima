@@ -1,12 +1,12 @@
 import { Elysia, t } from 'elysia';
 
 const app = new Elysia({ prefix: '/api' })
-	.get('/', () => ({ status: 'ok', message: 'hello SvelteKit' }))
-	.post('/', ({ body }) => body, {
-		body: t.Object({
-			name: t.String()
-		})
-	});
+  .get('/', () => ({ status: 'ok', message: 'hello SvelteKit' }))
+  .post('/', ({ body }) => body, {
+    body: t.Object({
+      name: t.String()
+    })
+  });
 
 type RequestHandler = (v: { request: Request }) => Response | Promise<Response>;
 
